@@ -1,0 +1,185 @@
+/*
+*** GLOBALS
+*/
+
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins;
+}
+
+/*
+*** START HEADER
+*/
+
+#navbar {
+  position: fixed;
+  top:0px;
+  width: 100vw;
+  height: 60px;
+  background-color: #be3144;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#navbar nav {
+  margin-right: 20px;
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-right: 3em;
+}
+
+#navbar ul li {
+  text-align: center;
+  display: inline-block;
+}
+
+#navbar ul li a:hover {
+  background-color: #a3a3a3;
+  cursor: pointer;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 60px;
+  display: block;
+  padding: 0 15px;
+}
+
+/*
+*** END HEADER
+*/
+
+/*
+*** START MAIN
+*/
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #313336;
+}
+
+#welcome-section .about {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+#welcome-section .about h1 {
+  color: #f0f0f0;
+  font-size: 3em;
+}
+
+#welcome-section .about h3 {
+  color: #a23143;
+  font-size: 2em;
+}
+
+#projects {
+  padding: 100px 10px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 50px 0;
+}
+
+#projects h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+#projects img {
+  max-width: 100%;
+}
+
+.projects .project-tile {
+  background-color: #303841;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.project-tile h2 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.2em;
+}
+
+.tags {
+  opacity: 0;
+  color: orangered;
+  transition: opacity 0.3s ease-out;
+}
+
+.project-tile:hover .tags {
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+.project-tile:hover .tags {
+  display:inline;
+}
+
+#contact {
+  text-align: center;
+  margin: 0 0 50px;
+  padding: 10px 0;
+  border-top: 3px solid #be3144;
+  border-bottom: 3px solid #be3144;
+}
+
+#contact h1 {
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 2em;
+}
+
+svg {
+  font-size: 2em;
+}
+
+/*
+*** END MAIN
+*/
+
+/*
+*** START FOOTER
+*/
+
+footer {
+  background-color: #303841;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/*
+*** END FOOTER
+*/
+
+@media only screen and (max-width: 700px) {
+
+}
